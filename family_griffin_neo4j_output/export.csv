@@ -1,0 +1,13 @@
+﻿n,r,m
+"(:Person {role: father,gender: male,name: Peter Griffin,age: 43})",[:MARRIED_TO],"(:Person {role: mother,gender: female,name: Lois Griffin,age: 42})"
+"(:Person {role: father,gender: male,name: Peter Griffin,age: 43})",[:HAS_CHILD],"(:Person {role: daughter,gender: female,name: Meg Griffin,age: 18})"
+"(:Person {role: father,gender: male,name: Peter Griffin,age: 43})",[:HAS_CHILD],"(:Person {role: son,gender: male,name: Chris Griffin,age: 16})"
+"(:Person {role: father,gender: male,name: Peter Griffin,age: 43})",[:HAS_CHILD],"(:Person {role: baby,gender: male,name: Stewie Griffin,age: 1})"
+"(:Person {role: mother,gender: female,name: Lois Griffin,age: 42})",[:HAS_CHILD],"(:Person {role: daughter,gender: female,name: Meg Griffin,age: 18})"
+"(:Person {role: mother,gender: female,name: Lois Griffin,age: 42})",[:HAS_CHILD],"(:Person {role: son,gender: male,name: Chris Griffin,age: 16})"
+"(:Person {role: mother,gender: female,name: Lois Griffin,age: 42})",[:HAS_CHILD],"(:Person {role: baby,gender: male,name: Stewie Griffin,age: 1})"
+"(:Person {role: daughter,gender: female,name: Meg Griffin,age: 18})",[:SIBLING_OF],"(:Person {role: son,gender: male,name: Chris Griffin,age: 16})"
+"(:Person {role: daughter,gender: female,name: Meg Griffin,age: 18})",[:SIBLING_OF],"(:Person {role: baby,gender: male,name: Stewie Griffin,age: 1})"
+"(:Person {role: son,gender: male,name: Chris Griffin,age: 16})",[:SIBLING_OF],"(:Person {role: baby,gender: male,name: Stewie Griffin,age: 1})"
+"(:Animal {role: pet,species: dog,name: Brian Griffin})",[:OWNED_BY],"(:Person {role: father,gender: male,name: Peter Griffin,age: 43})"
+"(:Animal {role: pet,species: dog,name: Brian Griffin})",[:OWNED_BY],"(:Person {role: mother,gender: female,name: Lois Griffin,age: 42})"

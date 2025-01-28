@@ -1,0 +1,49 @@
+@prefix : <http://family-griffin-graph.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Named graph for Family Griffin
+:FamilyGriffin {
+    :PeterGriffin rdf:type :Person ;
+                   :name "Peter Griffin"^^xsd:string ;
+                   :age "43"^^xsd:integer ;
+                   :gender "male"^^xsd:string ;
+                   :role "father"^^xsd:string .
+
+    :LoisGriffin rdf:type :Person ;
+                 :name "Lois Griffin"^^xsd:string ;
+                 :age "42"^^xsd:integer ;
+                 :gender "female"^^xsd:string ;
+                 :role "mother"^^xsd:string .
+
+    :MegGriffin rdf:type :Person ;
+                :name "Meg Griffin"^^xsd:string ;
+                :age "18"^^xsd:integer ;
+                :gender "female"^^xsd:string ;
+                :role "daughter"^^xsd:string .
+
+    :ChrisGriffin rdf:type :Person ;
+                  :name "Chris Griffin"^^xsd:string ;
+                  :age "16"^^xsd:integer ;
+                  :gender "male"^^xsd:string ;
+                  :role "son"^^xsd:string .
+
+    :StewieGriffin rdf:type :Person ;
+                   :name "Stewie Griffin"^^xsd:string ;
+                   :age "1"^^xsd:integer ;
+                   :gender "male"^^xsd:string ;
+                   :role "baby"^^xsd:string .
+
+    :BrianGriffin rdf:type :Animal ;
+                  :name "Brian Griffin"^^xsd:string ;
+                  :species "dog"^^xsd:string ;
+                  :role "pet"^^xsd:string .
+
+    # Relationships
+    :PeterGriffin :marriedTo :LoisGriffin .
+    :PeterGriffin :hasChild :MegGriffin, :ChrisGriffin, :StewieGriffin .
+    :LoisGriffin :hasChild :MegGriffin, :ChrisGriffin, :StewieGriffin .
+    :BrianGriffin :ownedBy :PeterGriffin, :LoisGriffin .
+    :MegGriffin :siblingOf :ChrisGriffin, :StewieGriffin .
+    :ChrisGriffin :siblingOf :StewieGriffin .
+}

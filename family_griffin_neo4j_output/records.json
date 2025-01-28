@@ -1,0 +1,480 @@
+﻿[
+  {
+    "n": {
+      "identity": 0,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "father",
+        "gender": "male",
+        "name": "Peter Griffin",
+        "age": 43
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:0"
+    },
+    "r": {
+      "identity": 1152921504606846976,
+      "start": 0,
+      "end": 1,
+      "type": "MARRIED_TO",
+      "properties": {
+
+      },
+      "elementId": "5:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1152921504606846976",
+      "startNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:0",
+      "endNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1"
+    },
+    "m": {
+      "identity": 1,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "mother",
+        "gender": "female",
+        "name": "Lois Griffin",
+        "age": 42
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1"
+    }
+  },
+  {
+    "n": {
+      "identity": 0,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "father",
+        "gender": "male",
+        "name": "Peter Griffin",
+        "age": 43
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:0"
+    },
+    "r": {
+      "identity": 1152922604118474752,
+      "start": 0,
+      "end": 2,
+      "type": "HAS_CHILD",
+      "properties": {
+
+      },
+      "elementId": "5:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1152922604118474752",
+      "startNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:0",
+      "endNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:2"
+    },
+    "m": {
+      "identity": 2,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "daughter",
+        "gender": "female",
+        "name": "Meg Griffin",
+        "age": 18
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:2"
+    }
+  },
+  {
+    "n": {
+      "identity": 0,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "father",
+        "gender": "male",
+        "name": "Peter Griffin",
+        "age": 43
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:0"
+    },
+    "r": {
+      "identity": 1155174403932160000,
+      "start": 0,
+      "end": 3,
+      "type": "HAS_CHILD",
+      "properties": {
+
+      },
+      "elementId": "5:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1155174403932160000",
+      "startNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:0",
+      "endNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:3"
+    },
+    "m": {
+      "identity": 3,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "son",
+        "gender": "male",
+        "name": "Chris Griffin",
+        "age": 16
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:3"
+    }
+  },
+  {
+    "n": {
+      "identity": 0,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "father",
+        "gender": "male",
+        "name": "Peter Griffin",
+        "age": 43
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:0"
+    },
+    "r": {
+      "identity": 1157426203745845248,
+      "start": 0,
+      "end": 4,
+      "type": "HAS_CHILD",
+      "properties": {
+
+      },
+      "elementId": "5:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1157426203745845248",
+      "startNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:0",
+      "endNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:4"
+    },
+    "m": {
+      "identity": 4,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "baby",
+        "gender": "male",
+        "name": "Stewie Griffin",
+        "age": 1
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:4"
+    }
+  },
+  {
+    "n": {
+      "identity": 1,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "mother",
+        "gender": "female",
+        "name": "Lois Griffin",
+        "age": 42
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1"
+    },
+    "r": {
+      "identity": 1152922604118474753,
+      "start": 1,
+      "end": 2,
+      "type": "HAS_CHILD",
+      "properties": {
+
+      },
+      "elementId": "5:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1152922604118474753",
+      "startNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1",
+      "endNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:2"
+    },
+    "m": {
+      "identity": 2,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "daughter",
+        "gender": "female",
+        "name": "Meg Griffin",
+        "age": 18
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:2"
+    }
+  },
+  {
+    "n": {
+      "identity": 1,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "mother",
+        "gender": "female",
+        "name": "Lois Griffin",
+        "age": 42
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1"
+    },
+    "r": {
+      "identity": 1155174403932160001,
+      "start": 1,
+      "end": 3,
+      "type": "HAS_CHILD",
+      "properties": {
+
+      },
+      "elementId": "5:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1155174403932160001",
+      "startNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1",
+      "endNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:3"
+    },
+    "m": {
+      "identity": 3,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "son",
+        "gender": "male",
+        "name": "Chris Griffin",
+        "age": 16
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:3"
+    }
+  },
+  {
+    "n": {
+      "identity": 1,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "mother",
+        "gender": "female",
+        "name": "Lois Griffin",
+        "age": 42
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1"
+    },
+    "r": {
+      "identity": 1157426203745845249,
+      "start": 1,
+      "end": 4,
+      "type": "HAS_CHILD",
+      "properties": {
+
+      },
+      "elementId": "5:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1157426203745845249",
+      "startNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1",
+      "endNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:4"
+    },
+    "m": {
+      "identity": 4,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "baby",
+        "gender": "male",
+        "name": "Stewie Griffin",
+        "age": 1
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:4"
+    }
+  },
+  {
+    "n": {
+      "identity": 2,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "daughter",
+        "gender": "female",
+        "name": "Meg Griffin",
+        "age": 18
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:2"
+    },
+    "r": {
+      "identity": 1152924803141730306,
+      "start": 2,
+      "end": 3,
+      "type": "SIBLING_OF",
+      "properties": {
+
+      },
+      "elementId": "5:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1152924803141730306",
+      "startNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:2",
+      "endNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:3"
+    },
+    "m": {
+      "identity": 3,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "son",
+        "gender": "male",
+        "name": "Chris Griffin",
+        "age": 16
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:3"
+    }
+  },
+  {
+    "n": {
+      "identity": 2,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "daughter",
+        "gender": "female",
+        "name": "Meg Griffin",
+        "age": 18
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:2"
+    },
+    "r": {
+      "identity": 1155176602955415554,
+      "start": 2,
+      "end": 4,
+      "type": "SIBLING_OF",
+      "properties": {
+
+      },
+      "elementId": "5:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1155176602955415554",
+      "startNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:2",
+      "endNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:4"
+    },
+    "m": {
+      "identity": 4,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "baby",
+        "gender": "male",
+        "name": "Stewie Griffin",
+        "age": 1
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:4"
+    }
+  },
+  {
+    "n": {
+      "identity": 3,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "son",
+        "gender": "male",
+        "name": "Chris Griffin",
+        "age": 16
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:3"
+    },
+    "r": {
+      "identity": 1155176602955415555,
+      "start": 3,
+      "end": 4,
+      "type": "SIBLING_OF",
+      "properties": {
+
+      },
+      "elementId": "5:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1155176602955415555",
+      "startNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:3",
+      "endNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:4"
+    },
+    "m": {
+      "identity": 4,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "baby",
+        "gender": "male",
+        "name": "Stewie Griffin",
+        "age": 1
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:4"
+    }
+  },
+  {
+    "n": {
+      "identity": 5,
+      "labels": [
+        "Animal"
+      ],
+      "properties": {
+        "role": "pet",
+        "species": "dog",
+        "name": "Brian Griffin"
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:5"
+    },
+    "r": {
+      "identity": 1152923703630102533,
+      "start": 5,
+      "end": 0,
+      "type": "OWNED_BY",
+      "properties": {
+
+      },
+      "elementId": "5:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1152923703630102533",
+      "startNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:5",
+      "endNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:0"
+    },
+    "m": {
+      "identity": 0,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "father",
+        "gender": "male",
+        "name": "Peter Griffin",
+        "age": 43
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:0"
+    }
+  },
+  {
+    "n": {
+      "identity": 5,
+      "labels": [
+        "Animal"
+      ],
+      "properties": {
+        "role": "pet",
+        "species": "dog",
+        "name": "Brian Griffin"
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:5"
+    },
+    "r": {
+      "identity": 1155175503443787781,
+      "start": 5,
+      "end": 1,
+      "type": "OWNED_BY",
+      "properties": {
+
+      },
+      "elementId": "5:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1155175503443787781",
+      "startNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:5",
+      "endNodeElementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1"
+    },
+    "m": {
+      "identity": 1,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "role": "mother",
+        "gender": "female",
+        "name": "Lois Griffin",
+        "age": 42
+      },
+      "elementId": "4:a5c7e6a3-c1da-4dad-863b-99cccd557d3e:1"
+    }
+  }
+]

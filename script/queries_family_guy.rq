@@ -1,0 +1,148 @@
+PREFIX : <http://family-griffin-graph.com/> 
+
+# SELECT Queries
+
+# n'1: Find all people
+SELECT ?person 
+WHERE {
+    ?person a :Person .
+} 
+LIMIT 10
+
+# n'2: Find all parent-child pairs
+SELECT DISTINCT ?parent ?child 
+WHERE {
+    ?parent :hasChild ?child .
+} 
+ORDER BY ?parent
+
+# n'3: Find the number of children for each parent
+SELECT ?parent (COUNT(?child) AS ?numChildren) 
+WHERE {
+    ?parent :hasChild ?child .
+} 
+GROUP BY ?parent
+
+
+# CONSTRUCT, ASK, DESCRIBE
+
+# n'4: Construct a graph with all parent-child relationships
+CONSTRUCT { 
+	?parent :hasChild ?child . 
+} 
+WHERE {
+    ?parent :hasChild ?child .
+}
+
+# n'5: Ask if Peter has a son
+ASK 
+WHERE {
+    :PeterGriffin :hasChild ?child .
+}
+
+# n'6: Describe all the information about Peter
+DESCRIBE :PeterGriffin
+
+
+# OPTIONAL e FILTER
+
+# n'7: Find all people and, if possible, their spouses
+SELECT ?person ?spouse 
+WHERE {
+    ?person a :Person .
+    OPTIONAL { ?person :marriedTo ?spouse . }
+}
+
+# n'8: Find people with children, filtering only those with at least one specific child
+SELECT ?person 
+WHERE {
+    ?person :hasChild ?child .
+    FILTER (?child = :StewieGriffin)
+}
+
+# n'9: Find parents without spouses
+SELECT ?parent 
+WHERE {
+    ?parent :hasChild ?child .
+    FILTER NOT EXISTS { ?parent :marriedTo ?spouse . }
+}
+
+
+# Property Paths
+
+# n'10: Find anyone connected through any relationship to Lois
+SELECT ?connected 
+WHERE {
+    :LoisGriffin (:|!:)* ?connected .
+}
+
+# n'11: Find children and grandchildren of Peter
+SELECT ?descendant 
+WHERE {
+    :PeterGriffin :hasChild/:hasChild ?descendant .
+}
+
+# n'12: Finds all reachable people starting with Peter through a recursive relationship (one or more times)
+SELECT DISTINCT ?reachable 
+WHERE {
+    :Peter (:hasChild)+ ?reachable .
+}
+
+
+# Insiemistic Operators (UNION, MINUS)
+
+# n'13: Find all people who have children or are spouses, but exclude those who are children (are under 18 years old):
+SELECT DISTINCT ?person 
+WHERE {
+    {
+        ?person :hasChild ?child .
+    } UNION {
+        ?person :hasSpouse ?spouse .
+    }
+    MINUS {
+        ?person :age ?age .
+        FILTER (?age < 18) .
+    }
+}
+
+
+# BIND & COALESCE(IF..)) + RDF Terms Function
+# SPARQL Query with Turtle Serialization Format RDF Graph
+# n'14: Find all people and assign them a custom label based on their role. If the role is not defined, assign “Unknown Role.” Also, check whether the name is an IRI or a literal:
+SELECT ?person ?label ?isLiteral 
+WHERE {
+    ?person a :Person ;
+            :role ?role ;
+            :name ?name .
+  
+    BIND(COALESCE(IF(?role = "father", "Father", 1/0),
+                  IF(?role = "mother", "Mother", 1/0),
+                  IF(?role = "son", "Son", 1/0),
+                  IF(?role = "daughter", "Daughter", 1/0), 
+                  "Unknown Role"
+                 ) AS ?label
+        )
+    
+    BIND(isLiteral(?name) AS ?isLiteral)
+}
+
+# SPARQL Query with TriG Serialization Format RDF Graph
+# n'15: Find all people and assign them a custom label based on their role. If the role is not defined, assign “Unknown Role.” Also, check whether the name is an IRI or a literal:
+SELECT ?person ?label ?isLiteral 
+FROM :FamilyGriffin 
+WHERE {
+    ?person a :Person ;
+            :role ?role ;
+            :name ?name .
+  
+    BIND(COALESCE(IF(?role = "father", "Father", 1/0),
+                  IF(?role = "mother", "Mother", 1/0),
+                  IF(?role = "son", "Son", 1/0),
+                  IF(?role = "daughter", "Daughter", 1/0), 
+                  "Unknown Role"
+                 ) AS ?label
+        )
+    
+    BIND(isLiteral(?name) AS ?isLiteral)
+}
+

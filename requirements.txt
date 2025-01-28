@@ -1,0 +1,4 @@
+Libraries required for RDF querying:
+
+rdflib>=6.0.0
+
