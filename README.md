@@ -239,4 +239,4 @@ WHERE {
 ## License
 This project is distributed under the **Apache 2.0 License**. See the **LICENSE** file for further details.
 
-*Note**: Feel free to contribute to the project! Submit a pull request or open an issue for improvements or suggestions.
+**Note**: Feel free to contribute to the project! Submit a pull request or open an issue for improvements or suggestions.
